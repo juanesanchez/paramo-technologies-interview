@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "types": ["cypress", "node"],
+      "esModuleInterop": true,
+      "moduleResolution": "node16"
+    },
+    "include": ["**/*.ts"]
+  }
