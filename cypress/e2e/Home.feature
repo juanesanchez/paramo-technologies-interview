@@ -13,6 +13,7 @@ Scenario: Check Components on Nav Header
     And I click on search button
     Then Modal background must be desplayed
     And Input search must be displayed and visible
+    And I close the modal search
 
 
 Scenario Outline: Search game <results>
@@ -20,12 +21,12 @@ Scenario Outline: Search game <results>
     And I click on search button
     And I look for the game "<game>"
     Then I expect find at least a game as "<results>"
+    And I close the modal search
     
     @happy
     Examples: Games
-    | game       | results               |
-    | Juego de   | Juego De La Oca       |
-    | pato       | Topatoo               |
-
-
+    | game            | results                                 |
+    | Juego de        | Juego De La Oca                         |
+    | pato            | Topatoo                                 |
+    | Eye of Horus The| Eye of Horus The Golden Tablet Megaways |
 

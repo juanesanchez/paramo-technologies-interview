@@ -47,6 +47,10 @@ class HomePage{
         return cy.get("#games-not-found")
     }
 
+    getBtnCloseModal(){
+        return cy.get(".icon-close")
+    }
+
 
 }
 

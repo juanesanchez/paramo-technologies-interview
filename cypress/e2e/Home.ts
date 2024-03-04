@@ -50,3 +50,7 @@ Then("I expect find at least a game as {string}", (result: string)=>{
         .should('contain.text', result)})
 })
 
+Then("I close the modal search", ()=>{
+    homePage.getBtnCloseModal().click()
+})
+
